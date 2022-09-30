@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+	],
+	"settings": {
+		"files.associations": {
+			"*.i": "c",
+			"ASM.C": "cpp",
+			"global.h": "c",
+			"cpointer.h": "c",
+			"APP.C": "cpp",
+			"APP.H": "cpp",
+			"ASM.H": "cpp",
+			"iostream": "c",
+			"mc96f6508a.h": "c",
+			"main.h": "c",
+			"i2c.h": "c",
+			"gpiodef_f4.h": "c",
+			"ca51f4_config.h": "c",
+			"TIMER.C": "cpp",
+			"key.h": "c",
+			"ca51f4sfr.h": "c",
+			"CA51F4SFR.H": "cpp",
+			"ca51f4xsfr.h": "c",
+			"init.h": "c",
+			"delay.h": "c",
+			"system_clock.h": "c",
+			"uart.h": "c",
+			"lvd.h": "c",
+			"bit": "c",
+			"compare": "c",
+			"cstddef": "c",
+			"limits": "c",
+			"type_traits": "c",
+			"xutility": "c"
+		}
+	}
+}

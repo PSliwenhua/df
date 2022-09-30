@@ -1,0 +1,26 @@
+".\OutPut\Main.obj",
+".\OutPut\LCD.obj",
+".\OutPut\ADC.obj",
+".\OutPut\APP.obj",
+".\OutPut\BUZ.obj",
+".\OutPut\cmt_spi3.obj",
+".\OutPut\cmt2300a.obj",
+".\OutPut\cmt2300a_hal.obj",
+".\OutPut\DoorContact.obj",
+".\OutPut\INIT.obj",
+".\OutPut\INTERRUPT.obj",
+".\OutPut\KEY.obj",
+".\OutPut\LVD.obj",
+".\OutPut\radio.obj",
+".\OutPut\RF.obj",
+".\OutPut\Test.obj",
+".\OutPut\Thermistor.obj",
+".\OutPut\ThermostaticValve.obj",
+".\OutPut\TIMER.obj",
+".\OutPut\delay.obj",
+".\OutPut\system_clock.obj",
+".\OutPut\uart.obj",
+".\OutPut\Flash.obj" 
+TO ".\OutPut\IRC_WRI" 
+
+PRINT(".\OutPut\IRC_WRI.map") REMOVEUNUSED 

@@ -1,0 +1,378 @@
+; .\OutPut\ASM.SRC generated from: Code\APP\ASM.C
+; COMPILER INVOKED BY:
+;        C:\Keil_v5\C51\BIN\C51.EXE Code\APP\ASM.C OPTIMIZE(8,SPEED) BROWSE INCDIR(.\Code\APP;.\Code\COMMON;.\Code\LEETCODE) DEBUG OBJECTEXTEND PRINT(.\OutPut\ASM.lst) TABS(2) SRC(.\OutPut\ASM.SRC)
+
+$NOMOD51
+
+NAME	ASM
+
+PLLCR	DATA	0FFH
+P0	DATA	080H
+P1	DATA	088H
+SIOCR	DATA	0B5H
+LVICR	DATA	0E1H
+P2	DATA	090H
+SIODR	DATA	0B6H
+P3	DATA	098H
+P4	DATA	0A0H
+UARTCR1	DATA	0E2H
+P5	DATA	0B0H
+UARTCR2	DATA	0E3H
+WDTCR	DATA	08DH
+P6	DATA	0C0H
+UARTCR3	DATA	0E4H
+WDTDR	DATA	08EH
+P0DB	DATA	0E9H
+BUZCR	DATA	097H
+P1DB	DATA	0EAH
+BUZDR	DATA	08FH
+LVRCR	DATA	0D8H
+DPH1	DATA	085H
+IE	DATA	0A8H
+SIOPS	DATA	0B7H
+DPL1	DATA	084H
+WTCNT	DATA	09FH
+RSTFR	DATA	086H
+EO	DATA	0A2H
+P0OD	DATA	092H
+P1OD	DATA	093H
+P2OD	DATA	094H
+P3OD	DATA	095H
+P4OD	DATA	096H
+IP	DATA	0B8H
+P5OD	DATA	09AH
+P0IO	DATA	089H
+T0CR	DATA	0B2H
+P6OD	DATA	09BH
+P1IO	DATA	091H
+T1CR	DATA	0CAH
+T0DR	DATA	0B4H
+P2IO	DATA	099H
+T2CR	DATA	0BAH
+P3IO	DATA	0A1H
+T3CR	DATA	0C2H
+T2DR	DATA	0BEH
+P4IO	DATA	0B1H
+T3DR	DATA	0C6H
+P5IO	DATA	0B9H
+P6IO	DATA	0C1H
+SP	DATA	081H
+FIDR	DATA	0FDH
+P0PU	DATA	0D4H
+P1PU	DATA	0D5H
+P2PU	DATA	0D6H
+FMCR	DATA	0FEH
+P3PU	DATA	0D7H
+EIFLAG	DATA	0A4H
+P4PU	DATA	0DAH
+P5PU	DATA	0DBH
+SCCR	DATA	08AH
+P6PU	DATA	0DCH
+LCDCCR	DATA	0F5H
+P00	BIT	080H.0
+PCON	DATA	087H
+P10	BIT	088H.0
+P01	BIT	080H.1
+LCDCRH	DATA	0ECH
+P20	BIT	090H.0
+P11	BIT	088H.1
+P02	BIT	080H.2
+P30	BIT	098H.0
+P21	BIT	090H.1
+P12	BIT	088H.2
+P03	BIT	080H.3
+P40	BIT	0A0H.0
+P31	BIT	098H.1
+P22	BIT	090H.2
+P13	BIT	088H.3
+P04	BIT	080H.4
+P50	BIT	0B0H.0
+P41	BIT	0A0H.1
+P32	BIT	098H.2
+P23	BIT	090H.3
+P14	BIT	088H.4
+P05	BIT	080H.5
+LCDCRL	DATA	0EBH
+TIFR	DATA	0C3H
+P60	BIT	0C0H.0
+P51	BIT	0B0H.1
+P42	BIT	0A0H.2
+P33	BIT	098H.3
+P24	BIT	090H.4
+P15	BIT	088H.5
+P06	BIT	080H.6
+P61	BIT	0C0H.1
+P52	BIT	0B0H.2
+P43	BIT	0A0H.3
+P34	BIT	098H.4
+P25	BIT	090H.5
+P16	BIT	088H.6
+P07	BIT	080H.7
+P62	BIT	0C0H.2
+P53	BIT	0B0H.3
+P44	BIT	0A0H.4
+P35	BIT	098H.5
+P26	BIT	090H.6
+P17	BIT	088H.7
+P63	BIT	0C0H.3
+P54	BIT	0B0H.4
+P45	BIT	0A0H.5
+P36	BIT	098H.6
+P27	BIT	090H.7
+FSADRH	DATA	0FAH
+P5FSRH	DATA	0F3H
+P64	BIT	0C0H.4
+P55	BIT	0B0H.5
+P46	BIT	0A0H.6
+P37	BIT	098H.7
+P65	BIT	0C0H.5
+P56	BIT	0B0H.6
+P47	BIT	0A0H.7
+P66	BIT	0C0H.6
+P57	BIT	0B0H.7
+P67	BIT	0C0H.7
+FSADRL	DATA	0FCH
+P5FSRL	DATA	0F2H
+FSADRM	DATA	0FBH
+IE1	DATA	0A9H
+IE2	DATA	0AAH
+B	DATA	0F0H
+IE3	DATA	0ABH
+WTCR	DATA	09EH
+WTDR	DATA	09FH
+UARTBD	DATA	0E6H
+BITCNT	DATA	08CH
+ACC	DATA	0E0H
+IP1	DATA	0F8H
+UARTDR	DATA	0E7H
+WDTCNT	DATA	08EH
+DPH	DATA	083H
+T0CDR	DATA	0B4H
+T1CDR	DATA	0CDH
+DPL	DATA	082H
+T2CDR	DATA	0BEH
+T3CDR	DATA	0C6H
+T1DRH	DATA	0CDH
+UARTST	DATA	0E5H
+KFLAG	DATA	0E8H
+KPOL0	DATA	0AEH
+T1DRL	DATA	0CCH
+KPOL1	DATA	0AFH
+T0CNT	DATA	0B3H
+T1CNT	DATA	0CBH
+T2CNT	DATA	0BCH
+CARCR	DATA	0CEH
+P0FSR	DATA	0EDH
+T3CNT	DATA	0C4H
+P2FSR	DATA	0EEH
+P3FSR	DATA	0EFH
+P4FSR	DATA	0F1H
+P6FSR	DATA	0F4H
+BITCR	DATA	08BH
+PSW	DATA	0D0H
+EIPOL	DATA	0A5H
+OSCCR	DATA	0D9H
+?PR?delay_ms?ASM     SEGMENT code
+?PR?F_ErasureFlash?ASM                   SEGMENT code
+?PR?F_WriteFlash?ASM SEGMENT code
+	EXTRN	DATA (TheVa)
+	PUBLIC	F_WriteFlash
+	PUBLIC	F_ErasureFlash
+	PUBLIC	delay_ms
+; #include "Global.h"
+; 
+; 
+; void delay_ms(void)
+
+	RSEG  ?PR?delay_ms?ASM
+delay_ms:
+	USING	0
+			; SOURCE LINE # 4
+; {
+			; SOURCE LINE # 5
+; 	#pragma asm
+; 		MOV R0,#0FFH
+	  MOV R0,#0FFH
+; 		MOV R1,#0FFH
+	  MOV R1,#0FFH
+; 		D_LOOP1:
+	  D_LOOP1:
+; 		DJNZ R0,D_LOOP1
+	  DJNZ R0,D_LOOP1
+; 		MOV R0,#0FFH
+	  MOV R0,#0FFH
+; 		DJNZ R1,D_LOOP1
+	  DJNZ R1,D_LOOP1
+; 	#pragma endasm
+; }
+			; SOURCE LINE # 14
+	RET  	
+; END OF delay_ms
+
+; 
+; //閹�?�洤鐣� flash 閸︽澘�?�冮幙锕傛珟閺佺増宓�?
+; //閸�?�洜澧栭張鐑樼湽缂傛牕鐡欓崙鑺ユ�? 婵″倷缍嶆�?�鐘插�?�閺佸府绱甸敍锟�?
+; void F_ErasureFlash()
+
+	RSEG  ?PR?F_ErasureFlash?ASM
+F_ErasureFlash:
+	USING	0
+			; SOURCE LINE # 18
+; {
+			; SOURCE LINE # 19
+; 	#pragma asm
+; 	MOV  FMCR,#0x01  //;page buffer clear
+	  MOV  FMCR,#0x01   
+; //	NOP;  //;Dummy instruction, This instruction must be needed.
+	  
+; //	NOP;  //;Dummy instruction, This instruction must be needed.
+	  
+; //	NOP;  //;Dummy instruction, This instruction must be needed.
+	  
+; 	MOV  A,#0
+	  MOV  A,#0
+; 	MOV  R0,#32  //;Sector size is 32bytes
+	  MOV  R0,#32   
+; 	MOV  DPH,#0x80
+	  MOV  DPH,#0x80
+; 	MOV  DPL,#0
+	  MOV  DPL,#0
+; Pgbuf_clr: 
+	  Pgbuf_clr: 
+; 	MOVX  @DPTR,A
+	  MOVX  @DPTR,A
+; 	INC  DPTR
+	  INC  DPTR
+; 	DJNZ  R0,Pgbuf_clr  //;Write 閿燂�?0閿燂�? to all page buffer
+	  DJNZ  R0,Pgbuf_clr   
+; 	MOV  FSADRH,#0x00
+	  MOV  FSADRH,#0x00
+; 	MOV  FSADRM,#0x23
+	  MOV  FSADRM,#0x23
+; 	MOV  FSADRL,#0xA0  //;Select sector 285
+	  MOV  FSADRL,#0xA0   
+; 	MOV  FIDR,#0xA5    //;Identification value
+	  MOV  FIDR,#0xA5     
+; 	MOV  FMCR,#0x02  	 //;Start flash erase mode
+	  MOV  FMCR,#0x02  	  
+; //	NOP;  //;Dummy instruction, This instruction must be needed.
+	  
+; //	NOP;  //;Dummy instruction, This instruction must be needed.
+	  
+; //	NOP;  //;Dummy instruction, This instruction must be needed.
+	  
+; 	MOV  A,#0  //;erase verify
+	  MOV  A,#0   
+; 	MOV  R0,#32  //;Sector size is 32bytes
+	  MOV  R0,#32   
+; 	MOV  R1,#0
+	  MOV  R1,#0
+; 	MOV  DPH,#0x23
+	  MOV  DPH,#0x23
+; 	MOV  DPL,#0xA0
+	  MOV  DPL,#0xA0
+; Erase_verify: 
+	  Erase_verify: 
+; 	MOVC  A,@A+DPTR
+	  MOVC  A,@A+DPTR
+; 	SUBB  A,R1
+	  SUBB  A,R1
+; 	JNZ  Verify_error
+	  JNZ  Verify_error
+; 	INC  DPTR
+	  INC  DPTR
+; 	DJNZ  R0,Erase_verify
+	  DJNZ  R0,Erase_verify
+; Verify_error:
+	  Verify_error:
+; 	#pragma endasm
+; }
+			; SOURCE LINE # 54
+	RET  	
+; END OF F_ErasureFlash
+
+; 
+; void F_WriteFlash()
+
+	RSEG  ?PR?F_WriteFlash?ASM
+F_WriteFlash:
+	USING	0
+			; SOURCE LINE # 56
+; {
+			; SOURCE LINE # 57
+; 	#pragma asm
+; 	MOV  FMCR,#0x01  //;page buffer clear
+	  MOV  FMCR,#0x01   
+; //	NOP;//  ;Dummy instruction, This instruction must be needed.
+	  
+; //	NOP;//  ;Dummy instruction, This instruction must be needed.
+	  
+; //	NOP;//  ;Dummy instruction, This instruction must be needed.
+	  
+; 	MOV  A,#0
+	  MOV  A,#0
+; 	MOV  R0,#32  //;Sector size is 32bytes
+	  MOV  R0,#32   
+; 	MOV  DPH,#0x80
+	  MOV  DPH,#0x80
+; 	MOV  DPL,#0
+	  MOV  DPL,#0
+; 	Pgbuf_WR:
+	  Pgbuf_WR:
+; 	MOVX  @DPTR,A
+	  MOVX  @DPTR,A
+; 	INC  A
+	  INC  A
+; 	INC  DPTR
+	  INC  DPTR
+; 	DJNZ  R0,Pgbuf_WR  //;Write data to all page buffer
+	  DJNZ  R0,Pgbuf_WR   
+; 	MOV  FSADRH,#0x00
+	  MOV  FSADRH,#0x00
+; 	MOV  FSADRM,#0x23
+	  MOV  FSADRM,#0x23
+; 	MOV  FSADRL,#0xA0  //;Select sector 285
+	  MOV  FSADRL,#0xA0   
+; 	MOV  FIDR,#0xA5  //;Identification value
+	  MOV  FIDR,#0xA5   
+; 	MOV  FMCR,#0x03  //;Start flash write mode
+	  MOV  FMCR,#0x03   
+; //	NOP;//  ;Dummy instruction, This instruction must be needed.
+	  
+; //	NOP;//  ;Dummy instruction, This instruction must be needed.
+	  
+; //	NOP;//  ;Dummy instruction, This instruction must be needed.
+	  
+; 	MOV  A,#0  //;write verify
+	  MOV  A,#0   
+; 	MOV  R0,#32  //;Sector size is 32bytes
+	  MOV  R0,#32   
+; 	MOV  R1,#0
+	  MOV  R1,#0
+; 	MOV  DPH,#0x23
+	  MOV  DPH,#0x23
+; 	MOV  DPL,#0xA0
+	  MOV  DPL,#0xA0
+; 	Write_verify:
+	  Write_verify:
+; 	MOVC  A,@A+DPTR
+	  MOVC  A,@A+DPTR
+; 	SUBB  A,R1
+	  SUBB  A,R1
+; 	JNZ  Verify_error1
+	  JNZ  Verify_error1
+; 	INC  R1
+	  INC  R1
+; 	INC  DPTR
+	  INC  DPTR
+; 	DJNZ  R0,Write_verify
+	  DJNZ  R0,Write_verify
+; 	Verify_error1:
+	  Verify_error1:
+; 	#pragma endasm
+; }
+			; SOURCE LINE # 94
+	RET  	
+; END OF F_WriteFlash
+
+	END
